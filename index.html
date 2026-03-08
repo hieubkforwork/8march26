@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Women's Day</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for beautiful typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background animation container for falling petals -->
+    <div class="background-animation"></div>
+
+    <div class="gift-container glass-effect">
+        <div class="message-section">
+            <div class="greeting-date">8/3</div>
+            <h1 class="greeting-text">Happy Women's Day! 🌸</h1>
+            <p class="sweet-message">
+                Gửi tình yêu của anh,<br>
+                Chúc em yêu ngày 8 tháng 3 thật rạng rỡ, ngập tràn niềm vui và luôn là bông hoa đẹp nhất trong lòng
+                anh. Đây là món quà nho nhỏ anh dành tặng em, mong rằng embe sẽ thích và những lúc buồn hay giận anh
+                embe có thể nghe bài hát này và nhớ đến anh nhé, hihi.
+                <span class="message-sender">Yêu bé rất nhiều - anh yêu của em - Minh Hiếu! ❤️</span>
+            </p>
+        </div>
+
+        <div class="audio-player glass-effect">
+            <div class="record-wrapper">
+                <div class="vinyl-record" id="record"></div>
+            </div>
+
+            <!-- Audio source, will be updated in JS -->
+            <audio id="audio-source" preload="metadata"></audio>
+
+            <div class="controls">
+                <button class="control-btn" id="play-pause-btn" aria-label="Play/Pause">
+                    <i class="fas fa-play"></i>
+                </button>
+
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" class="progress-bar" id="progress-bar" value="0" min="0" step="1">
+                    <span id="duration">0:00</span>
+                </div>
+
+                <!-- Download button -->
+                <a href="#" download="Yeu_em_8.3.mp3" class="control-btn download-btn" title="Tải bài hát về"
+                    id="download-btn">
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signature -->
+    <div class="signature">for Ngọc Huyền with love</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
